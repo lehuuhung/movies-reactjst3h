@@ -50,7 +50,7 @@ export async function getServerSideProps({ query }) {
 //   const id = await query.id;
 //   const result = await getDataMoviesById(id)
 const params = query.movie || []
-const id = pamrams[1]
+const id = params[1]
 const result = await api.getDataMoviesById(id)
   return {
     props: {
